@@ -1,0 +1,95 @@
+.Nav{
+    
+    margin:  10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    &-logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        .Logo{
+            border-radius: 10px;
+            background-color: rgb(111, 255, 255);
+            padding: 20px;
+        }
+    }
+    &-list{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+
+        .Nav-item{
+            padding: 10px;
+            .Nav-link{
+                border: 1px solid ;
+                border-radius: 15px;
+                padding: 10px;
+                text-decoration: none;
+                color: $text-color;
+                transition: all 0.3s ease-in;
+            }
+            .Nav-link:hover{
+                background: linear-gradient(rgba(255, 255, 255, 0.322), rgb(236, 236, 236,0.37)) ;
+                border-radius: 16px;
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                backdrop-filter: blur(3.1px);
+            }
+            .Nav--active{
+                background: linear-gradient(rgba(255, 255, 255, 0.322), rgb(236, 236, 236,0.37)) ;
+                border-radius: 16px;
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                backdrop-filter: blur(3.1px);
+            }
+        }
+
+    }
+
+    &-button{
+        .btn{
+            background-color: #2f82ff;
+            border: none;
+            border-radius: 10px;
+            color: white;
+            padding: 10px;
+            font-weight: bold;
+            cursor: pointer;
+            
+        }
+        .btn:hover{
+            background-color: rgb(32, 32, 255);
+        }
+    }
+
+}
+
+/*Responsive max-width */
+
+@media (max-width:880px){
+    .container{
+        margin: 0;
+    }
+    .Nav{
+        justify-content: space-between;
+        &-list{
+            display: none;
+        }
+    }
+
+    .Header{
+        margin: 20px;
+    }
+
+}
+
+/*Responsive  min-Width*/
+
+@media(min-width:1500px){
+    .Nav{
+        margin:0 auto;
+    }
+}
+

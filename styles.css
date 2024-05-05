@@ -1,0 +1,161 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("./img/windows2.jpg");
+  background-size: cover;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: rgb(122, 138, 168);
+  font-weight: bold;
+}
+
+header {
+  border: 1px solid;
+  margin-top: 5px;
+  background: linear-gradient(rgba(255, 255, 255, 0.322), rgba(236, 236, 236, 0.37));
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(3.1px);
+          backdrop-filter: blur(3.1px);
+}
+
+.container {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.Nav {
+  margin: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.Nav-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.Nav-logo .Logo {
+  border-radius: 10px;
+  background-color: rgb(111, 255, 255);
+  padding: 20px;
+}
+.Nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.Nav-list .Nav-item {
+  padding: 10px;
+}
+.Nav-list .Nav-item .Nav-link {
+  border: 1px solid;
+  border-radius: 15px;
+  padding: 10px;
+  text-decoration: none;
+  color: rgb(122, 138, 168);
+  transition: all 0.3s ease-in;
+}
+.Nav-list .Nav-item .Nav-link:hover {
+  background: linear-gradient(rgba(255, 255, 255, 0.322), rgba(236, 236, 236, 0.37));
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(3.1px);
+          backdrop-filter: blur(3.1px);
+}
+.Nav-list .Nav-item .Nav--active {
+  background: linear-gradient(rgba(255, 255, 255, 0.322), rgba(236, 236, 236, 0.37));
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(3.1px);
+          backdrop-filter: blur(3.1px);
+}
+.Nav-button .btn {
+  background-color: #2f82ff;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.Nav-button .btn:hover {
+  background-color: rgb(32, 32, 255);
+}
+
+/*Responsive max-width */
+@media (max-width: 880px) {
+  .container {
+    margin: 0;
+  }
+  .Nav {
+    justify-content: space-between;
+  }
+  .Nav-list {
+    display: none;
+  }
+  .Header {
+    margin: 20px;
+  }
+}
+/*Responsive  min-Width*/
+@media (min-width: 1500px) {
+  .Nav {
+    margin: 0 auto;
+  }
+}
+.Card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.Card-item {
+  background: linear-gradient(rgba(255, 255, 255, 0.322), rgba(236, 236, 236, 0.37));
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+  width: 300px;
+  transition: box-shadow 0.2s ease-in;
+}
+.Card-item .Card-body {
+  color: rgb(53, 61, 77);
+}
+.Card-item .Card-body .Card-header .Card-img {
+  width: 100%;
+  height: 100px;
+  background-color: rgb(75, 255, 253);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-bottom: 5px;
+}
+.Card-item .Card-body .Card-content {
+  padding: 20px;
+}
+.Card-item .Card-body .Card-content h2 {
+  margin-bottom: 10px;
+}
+.Card-item .Card-body .Card-content span {
+  font-weight: normal;
+}
+.Card-item-item:hover {
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+/*Responsive min-width*/
+@media (min-width: 1570px) {
+  .Card {
+    width: 1000px;
+    margin: 0 auto;
+  }
+  .Header {
+    width: 1000px;
+    margin: 0 auto;
+  }
+}/*# sourceMappingURL=styles.css.map */

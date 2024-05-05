@@ -1,0 +1,26 @@
+*,*::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url('./img/windows2.jpg');
+    background-size: cover;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: $text-color;
+    font-weight: bold;
+}
+
+header{
+    border: 1px solid;
+    margin-top: 5px;
+    background: linear-gradient(rgb(255, 255, 255, 0.322), rgb(236, 236, 236,0.37));
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+    backdrop-filter: blur(3.1px);
+}
+.container {
+    margin-left: 100px;
+    margin-right: 100px;
+}
